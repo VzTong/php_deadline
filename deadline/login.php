@@ -30,7 +30,7 @@ if (is_method_post()) {
 		//xác thực thông tin đăng nhập thành công
 		js_alert("Đăng nhập thành công!!!");
 		$_SESSION["name"] = $username;
-		$_SESSION["user_id"] = $user["id"];
+		$_SESSION["id"] = $user["id"];
 		js_redirect_to("/");
 	} else {
 		js_alert("Tên đăng nhập hoặc mật khẩu không hợp lệ");
